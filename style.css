@@ -1,0 +1,159 @@
+
+/* sets up the no space class being implemented in multi color text strings*/
+.no-space {
+  font-size: 0;
+  }
+  /*basic centered class being implemented in the title*/
+.centered{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+             /*Sets up the centered class being used in the email recipient box*/
+             .centered-form {
+                text-align: center;
+                font-size: 30px;
+                padding-top: 50px;
+              }
+              /*sets up another centered class, which is being used in the email upload function*/
+              .centered-form input[type="email"] {
+                margin: 0 auto; 
+                display: block; 
+                width:20%;
+                height:40px;
+                font-size:20px;
+              }
+              /*sets up another centered form being used in the file upload function*/
+              [type=file]::file-selector-button {
+                padding-left: 200px;
+                margin-right: 20px;
+                border: 2px solid;
+                background: #084cdf;
+                padding: 10px 20px;
+                border-radius: 10px;
+                color: #fff;
+                cursor: pointer;
+                transition: .5s;
+                width:120px;
+                height:auto;
+                font-size: 15px;
+                margin-top: 50px;
+
+              }
+              /*changes the color of button when hovered over*/
+              input[type=file]::file-selector-button:hover {
+                background-color: blueviolet;
+                border: 2px solid black;
+              }
+              /*sets up the text being used at the bottom of the page*/
+              .centered2{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                padding-top:187px;
+              }
+              /*sets up a class being used to format the dow logo*/
+              .dowlogo{
+                display: block;
+                margin:0 auto;
+                justify-content:center;
+                align-items: center;
+                height:auto;
+                width:auto;
+                padding-top:0px;
+                padding-left:780px;
+              }
+              input[type="submit"].plain {
+                border:0;
+                background:transparent;
+                font-size: 50px;
+                color: white;
+                width:300px;
+                cursor: pointer;
+              }
+              /*imports a url which is needed for the transfer file button*/
+              @import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+              * {
+                box-sizing: border-box;
+              }
+              body {
+                height: 20vh;
+                display: block;
+                justify-content: center;
+                align-items: center;
+              }
+              /*sets up the actual size and location of the transfer file button*/
+              .wrapper {
+                display: flex;
+                justify-content: center;
+                margin-top: 50px;
+              }
+              .cta {
+                /*sets up the display of the transfer file button, such as the colors and the font size*/
+                  display: flex;
+                  padding: 10px 45px;
+                  text-decoration: none;
+                  font-family: 'Poppins', sans-serif;
+                  font-size: 40px;
+                  color: white;
+                  background: #e60909;
+                  transition: 1s;
+                  box-shadow: 6px 6px 0 rgb(255, 255, 255);
+                  transform: skewX(-15deg);
+                  cursor: auto;
+              }
+              .cta:focus {
+                outline: none; 
+              }
+              /*does the hover animation that creates a transition when hovered on*/
+              .cta:hover {
+                  transition: 0.5s;
+                  box-shadow: 10px 10px 0 #ffffff;
+              }
+              .cta span:nth-child(2) {
+                  transition: 0.5s;
+                  margin-right: 0px;
+              }
+              .cta:hover  span:nth-child(2) {
+                  transition: 0.5s;
+                  margin-right: 45px;
+              }
+                span {
+                  transform: skewX(15deg) 
+                }
+                span:nth-child(2) {
+                  width: 20px;
+                  margin-left: 30px;
+                  position: relative;
+                  top: 12%;
+                }
+              path.one {
+                  transition: 0.4s;
+                  transform: translateX(-60%);
+              }
+              path.two {
+                  transition: 0.5s;
+                  transform: translateX(-30%);
+              }
+              .cta:hover path.three {
+                  animation: color_anim 2s infinite 0.2s;
+              }
+              .cta:hover path.one {
+                  transform: translateX(0%);
+                  animation: color_anim 2s infinite 0.6s;
+              }
+              .cta:hover path.two {
+                  transform: translateX(0%);
+                  animation: color_anim 2s infinite 0.4s;
+              }
+              @keyframes color_anim {
+                  0% {
+                      fill: white;
+                  }
+                  50% {
+                      fill: black;
+                  }
+                  100% {
+                      fill: white;
+                  }
+              }

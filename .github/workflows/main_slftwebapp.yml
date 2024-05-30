@@ -54,4 +54,4 @@ jobs:
           app-name: 'SLFTwebapp'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2DB6E75E564E488EB7E7207A99E8A65C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_193D433C02A1479ABB03F27E24BF5C4D }}
